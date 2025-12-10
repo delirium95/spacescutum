@@ -1,0 +1,8 @@
+services:
+  react:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: docker-reactjs
+    ports:
+      - "3000:3000"
