@@ -1,7 +1,7 @@
 import { type ReactNode, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { ModalContext } from "./context/ModalContext";
-import {ModalKit} from "../shared/ui/modal/ModalKit";
+import {ModalKit} from "@/shared/ui/modal/ModalKit";
 
 export const ModalProvider = ({ children }: { children: ReactNode }) => {
     const [content, setContent] = useState<ReactNode | null>(null);

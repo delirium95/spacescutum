@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npx eslint src --ext .js,.ts,.tsx --fix
+npx prettier --write "src/**/*.{js,ts,tsx,json,css,scss,md}"

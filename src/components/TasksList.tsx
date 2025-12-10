@@ -1,15 +1,15 @@
 import { Box, Button, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
-import {useDeleteTaskMutation, useGetTasksQuery} from "../redux/api/tasksApi";
+import {useDeleteTaskMutation, useGetTasksQuery} from "@/redux/api/tasksApi";
 import {
     DataGrid,
     GridRowParams,
 } from '@mui/x-data-grid';
 import { useSnackbar } from "notistack";
 import {LoadingSpinner} from "./LoadingSpinner";
-import {useTasksColumns} from "../shared/columns/columns";
-import { useModal } from "../shared/libs/hooks/useModal";
-import {Task} from "../models/task";
+import {useTasksColumns} from "@/shared/columns/columns";
+import { useModal } from "@/shared/libs/hooks/useModal";
+import {Task} from "@/models/task";
 import {EditTaskForm} from "./forms/EditTaskForm";
 import {useEffect, useState} from "react";
 

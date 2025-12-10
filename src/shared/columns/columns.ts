@@ -1,5 +1,5 @@
 import { GridColDef } from "@mui/x-data-grid";
-import {Task} from "../../models/task";
+import {Task} from "@/models/task";
 import {useTranslation} from "react-i18next";
 
 export const useTasksColumns = (): GridColDef<Task>[] => {

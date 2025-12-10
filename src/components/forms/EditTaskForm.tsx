@@ -3,8 +3,8 @@ import { useForm, Controller } from 'react-hook-form';
 import { Box, Button, TextField, Checkbox, FormControlLabel } from '@mui/material';
 import { useSnackbar } from 'notistack';
 import { useTranslation } from 'react-i18next';
-import { Task } from "../../models/task";
-import { useEditTaskMutation } from "../../redux/api/tasksApi";
+import { Task } from "@/models/Task";
+import { useEditTaskMutation } from "@/redux/api/tasksApi";
 
 type FormValues = {
     userId: string;

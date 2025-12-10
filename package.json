@@ -18,6 +18,7 @@
     "@types/react-dom": "^19.2.3",
     "i18next": "^25.7.2",
     "i18next-browser-languagedetector": "^8.2.0",
+    "module-alias": "^2.2.3",
     "notistack": "^3.0.2",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
@@ -32,7 +33,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "husky install",
+    "lint": "eslint src --ext .js,.ts,.tsx --fix",
+    "format": "prettier --write \"src/**/*.{js,ts,tsx,json,css,scss,md}\""
+  },
+  "_moduleAliases": {
+    "@": "src"
   },
   "eslintConfig": {
     "extends": [
@@ -51,5 +58,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "husky": "^8.0.0"
   }
 }
